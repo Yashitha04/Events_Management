@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<p>Welcome back</p>
+{% for x in data %}
+<p>{{ x['name'] }} {{ x['date'] }}</p>
+{% endfor %}
+{% endblock %}
